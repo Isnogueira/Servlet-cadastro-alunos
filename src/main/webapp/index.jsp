@@ -16,26 +16,26 @@
         <h2>Cadastro</h2>
         <div class="form-group">
             <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Entre com o nome" name="nome">
+            <input type="text" class="form-control" id="nome" value="Ingrid Nogueira" placeholder="Entre com o nome" name="nome">
         </div>
         <div class="form-group">
             <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="Entre com o email" name="email">
+            <input type="email" class="form-control" id="email" value="ingrid@gmail.com" placeholder="Entre com o email" name="email">
         </div>
         <div class="container">
             <h2>Curso</h2>
             <form>
                 <label class="radio-inline">
-                    <input type="radio" name="curso" value="G" checked="checked">Graduação
+                    <input type="radio" name="curso" value="Graduacao" checked="checked">Graduação
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="curso" value="E">Especialização
+                    <input type="radio" name="curso" value="Especializacao">Especialização
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="curso" value="M">Mestrado
+                    <input type="radio" name="curso" value="Mestrado">Mestrado
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="curso" value="D">Doutorado
+                    <input type="radio" name="curso" value="Doutorado">Doutorado
                 </label>
             </form>
         </div>
@@ -50,17 +50,12 @@
             </select>
         </div>
         <div class="container">
-            <h2>Disciplina</h2>
-            <div class="checkbox">
-                <label><input type="checkbox" value="java" name="disciplina">Java</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value="python" name="disciplina">Python</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value="javascript" name="disciplina">JavaScript</label>
-            </div>
+            <h2>Disciplinas</h2>
+            <label class="checkbox-inline"><input type="checkbox" name="disciplina" value="java" checked>Java</label>
+            <label class="checkbox-inline"><input type="checkbox" name="disciplina" value="python" checked>Python</label>
+            <label class="checkbox-inline"><input type="checkbox" name="disciplina" value="javascript">Javascript</label>
         </div>
+        <br>
         <button type="submit" class="btn btn-default">Cadastrar</button>
     </div>
 </form>
