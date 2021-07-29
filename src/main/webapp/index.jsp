@@ -22,6 +22,14 @@
             <label for="email">E-mail:</label>
             <input type="email" class="form-control" id="email" value="ingrid@gmail.com" placeholder="Entre com o email" name="email">
         </div>
+        <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="number" class="form-control" id="idade" value="28" placeholder="Entre com a idade" name="idade">
+        </div>
+        <div class="form-group">
+            <label for="mensalidade">Mensalidade</label>
+            <input type="number" class="form-control" id="mensalidade" value="1000" placeholder="Entre com o valor da mensalidade" name="mensalidade">
+        </div>
         <div class="container">
             <h2>Curso</h2>
             <form>
@@ -56,7 +64,9 @@
             <label class="checkbox-inline"><input type="checkbox" name="disciplina" value="javascript">Javascript</label>
         </div>
         <br>
-        <button type="submit" class="btn btn-default">Cadastrar</button>
+        <div class="container">
+            <button type="submit" class="btn btn-default">Cadastrar</button>
+        </div>
     </div>
 </form>
 </body>

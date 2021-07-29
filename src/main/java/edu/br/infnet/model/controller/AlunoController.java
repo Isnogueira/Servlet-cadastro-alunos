@@ -18,15 +18,15 @@ public class AlunoController extends HttpServlet {
         super.doPost(req, resp);
 
         Aluno aluno = new Aluno(req.getParameter("nome"), req.getParameter("email"));
-
+        aluno.setIdade(Integer.valueOf(req.getParameter("idade")));
         aluno.setCurso(req.getParameter("curso"));
+        aluno.setMensalidade(Float.valueOf(req.getParameter("mensalidade")));
         aluno.setRegiao(req.getParameter("regiao"));
         aluno.setDisciplinas(req.getParameterValues("disciplina"));
 
         System.out.println(aluno);
-        System.out.println("\nDisciplinas:" + aluno.getDisciplinas().length);
-
         req.getRequestDispatcher("confirmacao.html").forward(req, resp);
+
 
     }
 }

@@ -5,7 +5,9 @@ import java.util.Arrays;
 public class Aluno {
     private String nome;
     private String email;
+    private int idade;
     private String curso;
+    private float mensalidade;
     private String regiao;
     private String[] disciplinas;
 
@@ -54,15 +56,33 @@ public class Aluno {
         this.disciplinas = disciplinas;
     }
 
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getMensalidade() {
+        return mensalidade;
+    }
+
+    public void setMensalidade(float mensalidade) {
+        this.mensalidade = mensalidade;
+    }
 
     @Override
     public String toString() {
         return "Aluno{" +
-                "\nnome='" + nome + '\'' + "," +
-                "\nemail='" + email + '\'' + "," +
-                "\ncurso='" + curso + '\'' + "," +
-                "\nregiao='" + regiao + '\'' + "," +
-                "\ndisciplinas Cursadas=" + Arrays.toString(disciplinas) + "\n" +
+                "\nnome='" + nome + '\'' +","+
+                "\nemail='" + email + '\'' +","+
+                "\nidade=" + idade +","+
+                "\ncurso='" + curso + '\'' +","+
+                "\nmensalidade=" + mensalidade +","+
+                "\nregiao='" + regiao + '\'' +","+
+                "\nqtdDisciplinas='" + disciplinas.length + '\'' +","+
+                "\ndisciplinas=" + Arrays.toString(disciplinas) +"\n"+
                 '}';
     }
 }
