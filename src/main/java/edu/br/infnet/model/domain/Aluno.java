@@ -72,7 +72,7 @@ public class Aluno {
         this.mensalidade = mensalidade;
     }
 
-    @Override
+   /*@Override
     public String toString() {
         return "Aluno{" +
                 "\nnome='" + nome + '\'' +","+
@@ -84,5 +84,5 @@ public class Aluno {
                 "\nqtdDisciplinas='" + disciplinas.length + '\'' +","+
                 "\ndisciplinas=" + Arrays.toString(disciplinas) +"\n"+
                 '}';
-    }
+    }*/
 }
