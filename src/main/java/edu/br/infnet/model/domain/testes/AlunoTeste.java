@@ -1,4 +1,4 @@
-package edu.br.infnet.testes;
+package edu.br.infnet.model.domain.testes;
 
 import edu.br.infnet.model.domain.Aluno;
 

@@ -1,11 +1,10 @@
-package edu.br.infnet.model.controller;
+package edu.br.infnet.app;
 
 import edu.br.infnet.model.domain.Aluno;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class AlunoController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("index.html").forward(request, response);
+        request.getRequestDispatcher("cadastro.html").forward(request, response);
     }
 
     @Override
@@ -35,7 +34,16 @@ public class AlunoController extends HttpServlet {
 
         alunos.add(aluno);
 
-        PrintWriter out = response.getWriter(); // --> printar jsp
+        request.setAttribute("nomeAluno", aluno.getNome());
+
+        request.setAttribute("qtdAlunos", alunos.size());
+
+        request.setAttribute("lista", alunos);
+
+        request.getRequestDispatcher("confirmacao.jsp").forward(request, response);
+    }
+
+   /* PrintWriter out = response.getWriter(); // --> printar jsp
 
         out.println("<!DOCTYPE html>\n" +
                 "<html lang=\"pt-BR\">\n" +
@@ -48,7 +56,7 @@ public class AlunoController extends HttpServlet {
                 "</head>\n" +
                 "<body>\n" +
                 "    <div class=\"container\">\n" +
-                "        <h2> Aluno(a) " + aluno.getNome() +" cadastrado realizado com sucesso!</h2>\n" +
+                "        <h2> Aluno(a) " + aluno.getNome() +" cadastrado com sucesso!</h2>\n" +
                 "        <hr>\n" +
                 "        <h3>Quantidade de alunos cadastrados: " + alunos.size() + "</h3>\n" +
                 "        <hr>" +
@@ -60,18 +68,16 @@ public class AlunoController extends HttpServlet {
                 "</html>");
 
         for (Aluno aln : alunos) {
-            out.println(
+        out.println(
                 "        <div class=\"container\">\n" +
-                "           <h3>Aluno(a): " + aln.getNome() + "</h3>" +
-                "           <hr>" +
-                "        </div>");
-        }
+                        "           <h3>Aluno(a): " + aln.getNome() + "</h3>" +
+                        "           <hr>" +
+                        "        </div>");
+    }
 
         out.println(
                 "        <div class=\"container\">\n" +
                 "            <a href=\"aluno\">Voltar</a>\n" +
-                "        </div>");
+                "        </div>");*/
 
-        //request.getRequestDispatcher("confirmacao.html").forward(request, response);
-    }
 }
