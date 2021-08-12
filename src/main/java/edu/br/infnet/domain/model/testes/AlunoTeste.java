@@ -1,6 +1,6 @@
-package edu.br.infnet.model.domain.testes;
+package edu.br.infnet.domain.model.testes;
 
-import edu.br.infnet.model.domain.Aluno;
+import edu.br.infnet.domain.model.Aluno;
 
 import java.util.ArrayList;
 import java.util.List;

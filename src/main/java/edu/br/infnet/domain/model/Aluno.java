@@ -1,6 +1,4 @@
-package edu.br.infnet.model.domain;
-
-import java.util.Arrays;
+package edu.br.infnet.domain.model;
 
 public class Aluno {
     private String nome;

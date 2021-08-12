@@ -1,7 +1,7 @@
 package edu.br.infnet.app;
 
-import edu.br.infnet.model.domain.Aluno;
-import edu.br.infnet.model.repository.AlunoDao;
+import edu.br.infnet.domain.model.Aluno;
+import edu.br.infnet.infra.repository.AlunoDao;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
