@@ -8,11 +8,11 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>AlunoController</servlet-name>
-        <servlet-class>edu.br.infnet.app.AlunoController</servlet-class>
+        <servlet-class>edu.br.infnet.controller.AlunoController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AcessoController</servlet-name>
-        <servlet-class>edu.br.infnet.app.AcessoController</servlet-class>
+        <servlet-class>edu.br.infnet.controller.AcessoController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AlunoController</servlet-name>

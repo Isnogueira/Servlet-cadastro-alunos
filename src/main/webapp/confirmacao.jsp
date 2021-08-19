@@ -1,4 +1,4 @@
-<%@ page import="edu.br.infnet.domain.model.Aluno"%>
+<%@ page import="Aluno"%>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>

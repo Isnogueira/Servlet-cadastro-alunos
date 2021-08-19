@@ -1,6 +1,6 @@
-package edu.br.infnet.conexao.testes;
+package edu.br.infnet.model.conexao.testes;
 
-import edu.br.infnet.conexao.Conexao;
+import edu.br.infnet.model.conexao.Conexao;
 
 public class ConexaoTeste {
 

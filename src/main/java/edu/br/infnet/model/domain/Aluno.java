@@ -1,4 +1,4 @@
-package edu.br.infnet.domain.model;
+package edu.br.infnet.model.domain;
 
 public class Aluno {
     private String nome;

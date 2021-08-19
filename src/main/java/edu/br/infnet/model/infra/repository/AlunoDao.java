@@ -1,7 +1,7 @@
-package edu.br.infnet.infra.repository;
+package edu.br.infnet.model.infra.repository;
 
-import edu.br.infnet.conexao.Conexao;
-import edu.br.infnet.domain.model.Aluno;
+import edu.br.infnet.model.conexao.Conexao;
+import edu.br.infnet.model.domain.Aluno;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

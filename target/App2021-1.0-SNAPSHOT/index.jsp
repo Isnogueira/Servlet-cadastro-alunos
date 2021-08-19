@@ -13,7 +13,7 @@
         String msg = (String)request.getAttribute("mensagem");
     %>
 
-    <form action="index" method="post">
+    <form action="index" method="get">
         <div class="container">
 
         <%if(msg != null){%>
